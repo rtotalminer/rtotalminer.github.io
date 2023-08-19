@@ -1,4 +1,6 @@
 # rtotalminer.github.io
 
 ## Portfolio
-<a href="/maze-game">Maze Game</a>
+- <a href="/maze-game">Maze Game</a><br>
+- <a href="/js-sorting-algos">JS Sorting Algorithms</a>
+
