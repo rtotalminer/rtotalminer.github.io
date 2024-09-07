@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import './slideshow.css';
 
 const images = [
-  { src: 'https://raw.githubusercontent.com/rtotalminer/maze-game/main/game/static/img/menu.png', url: 'rtotalminer.github.io/maze-game/' },
+  {
+    src: 'https://raw.githubusercontent.com/rtotalminer/maze-game/main/game/static/img/menu.png',
+    url: 'https://rtotalminer.github.io/maze-game/'
+  },
   { src: 'https://via.placeholder.com/800x400?text=Slide+2', url: 'https://www.example2.com' },
   { src: 'https://via.placeholder.com/800x400?text=Slide+3', url: 'https://www.example3.com' },
 ];
@@ -22,7 +25,7 @@ export default function Slideshow() {
     <div className="relative w-full max-w-[400px] mx-auto overflow-hidden">
       <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
         {images.map((image, index) => (
-          <a key={index} href={image.url} target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
+          <a key={index} href={image.url} target="_blank" className="flex-shrink-0">
             <img src={image.src} alt={`Slide ${index + 1}`} className="w-[400px] h-[400px] object-cover" />
           </a>
         ))}
